@@ -24,35 +24,28 @@ class SplashScreen extends StatelessWidget {
                     child: Image.asset('assets/images/logo.png'),
                   ), // Jarak antara logo dan teks
                   Text(
-                    "Health My Heart",
+                    "CARINGMYHEART",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 24.sp, // Responsif berdasarkan layar
+                      fontSize: 20.sp, // Responsif berdasarkan layar
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.center,
-                  ),// Jarak antara teks utama dan teks deskripsi
+                  ), // Jarak antara teks utama dan teks deskripsi
                   SizedBox(
-                    width: 200.w,
+                    width: 240.w,
                     child: Text(
                       "APLIKASI YANG DICIPTAKAN SEBAGAI SELF-REPORT ATAU PEMANTAUAN MANDIRI PASIEN GAGAL JANTUNG YANG TELAH MENJALANI PERAWATAN ATAUPUN YANG BELUM SUPAYA TIDAK TERJADI RAWAT BERULANG ATAU KOMPLIKASI YANG LEBIH BERAT.",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 9.sp,
+                        fontSize: 8.sp,
                       ),
                       textAlign: TextAlign.center,
                     ),
                   ),
                 ],
               ),
-              gradient: const LinearGradient(
-                colors: [
-                  Color(0xFFFF5A5F),
-                  Color(0xFF4A90E2),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
+              backgroundColor: const Color(0xFFFF5A5F),
               duration: const Duration(milliseconds: 5000),
               animationDuration: const Duration(milliseconds: 2500),
               onAnimationEnd: () => debugPrint("On Scale End"),
